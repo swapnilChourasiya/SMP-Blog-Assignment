@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy BlogPost</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+    
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Happy<span>Blogs</span></h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <button class="log-btn logIn-btn">Log In</button>
+                    <button class="logOut-btn log-btn">Log Out</button>
+                </li>   
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal">
+        <div class="modal-box">
+            <div class="modal-body">
+                <form>
+                    <div class="log-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="log-form">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <button onclick="signIn()" class="btn" id="signIn">Sign In</button>
+                    <!-- <button onclick="signOut()" class="btn" id="signOUt">Log Out</button> -->
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class=btn2 href="#">Don't have an account?<span>Create an Account</span></a>
+            </div>
+            <img class="close1" src="./Images/close.png" alt="close">
+        </div>
+        <div class="modal-box2">
+            <div class="modal-body">
+                <form>
+                    <div class="log-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email2">
+                    </div>
+                    <div class="log-form">
+                        <label for="password">Password</label>
+                        <input type="password" id="password2">
+                    </div>
+                    <button onclick="signUp()" class="btn" id="signUp">Registor Now</button>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+                <a href="#">Create an Account</a>
+            </div> -->
+            <img class="close2" src="./Images/close.png" alt="close">
+        </div>
+    </div>
+    <header>
+        <h3>Write Blogs That Inspire!!</h3>
+    </header>
+    <form class="header-form">
+        <!-- <input type="text" class="blog-input" /> -->
+        <textarea class="blog-input" cols="70" rows="4"></textarea>
+        <button class="add-btn" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="blog-container">
+        <ul class="blog-list">
+
+        </ul>
+    </div>
+
+    <script src="/blog.js"></script>
+    <!-- <script src="/logIn.js"></script> -->
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAH2mXpNdYzsHCw2yNB6W3Dhln4bB9Hx2Q",
+          authDomain: "smp-assign-log-system.firebaseapp.com",
+          databaseURL: "https://smp-assign-log-system-default-rtdb.firebaseio.com",
+          projectId: "smp-assign-log-system",
+          storageBucket: "smp-assign-log-system.appspot.com",
+          messagingSenderId: "132181139540",
+          appId: "1:132181139540:web:0cd99394232cb89fe18dc1"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database= getDatabase(app);
+        const auth = getAuth();
+      </script> -->
+
+      
+
+</body>
+
+</html>

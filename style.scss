@@ -1,0 +1,342 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    // background-color: #f6f6f6;
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    // overflow: hidden;
+}
+
+//navigation bar
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0px 20px;
+    padding: 0px 20px;
+    .logo{
+        color: black;
+        flex:1;
+       
+        span{
+            color: rgb(64, 160, 163);
+        }
+    }
+    .navbar{
+        ul{
+            list-style: none;
+            width: 90%;
+            li{
+                //  float: right; 
+                .log-btn{
+                    cursor: pointer;
+                    background: none;
+                    border:none;
+                    text-transform: uppercase;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    color: black;
+                }
+                .log-btn:hover{
+                    color:rgb(68, 68, 68);
+                }
+                .logOut-btn{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+// Log In modal
+
+.modal{
+    display: none;
+    // display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    .modal-box{
+        margin: 10% auto;
+        width: 400px;
+        position: relative;
+        background-color: white;
+        animation: modalopen 0.4s;
+
+        @keyframes modalopen{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+    .modal-body{
+        padding: 40px;
+        padding-right: 45px;
+        .btn{
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 8px 0px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 3px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .close1{
+        cursor: pointer;
+        height: 23px;
+        width: 23px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    
+    }
+    .modal-footer{
+        background-color: #f7f7f9;
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+        a{
+            font-size: small;
+            color: steelblue;
+            text-decoration: none;
+            span{
+                text-decoration: underline;
+            }
+            
+            span:hover{
+               color: blue;
+               font-weight: bold;
+            }
+        }
+    }
+    form{
+        .log-form{
+            margin: 15px 0px; 
+            label{
+                display: block;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+            }
+            input{
+                width: 100%;
+                height: 30px;
+            }
+        }
+    }
+}
+    .modal-box2{
+        display: none;
+        margin: 10% auto;
+        width: 400px;
+        position: relative;
+        background-color: white;
+        // animation: modalopen 0.4s;
+
+        // @keyframes modalopen{
+        //     from{
+        //         opacity: 0;
+        //     }
+        //     to{
+        //         opacity: 1;
+        //     }
+        // }
+
+    .modal-body{
+        padding: 40px;
+        padding-right: 45px;
+        .btn{
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 8px 0px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 3px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .close2{
+        cursor: pointer;
+        height: 23px;
+        width: 23px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    
+    }
+    // .modal-footer{
+    //     background-color: #f7f7f9;
+    //     padding: 2px 0px 20px 0px;
+    //     text-align: center;
+    //     a{
+    //         color: steelblue;
+    //         text-decoration: none;
+    //     }
+    // }
+    form{
+        .log-form{
+            margin: 15px 0px; 
+            label{
+                display: block;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+            }
+            input{
+                width: 100%;
+                height: 30px;
+            }
+        }
+    }
+}
+}
+
+//header
+
+header{
+    font-size: 1.5rem;
+    width: 100vw;
+    min-height: 20vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.header-form{
+    min-height: 20vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+//     input, button{
+// padding:0.5rem;
+// font-size: 2rem;
+// border:none;
+// background: white;
+// }
+    textarea, button{
+padding:0.5rem;
+font-size: 2rem;
+border:none;
+background: white;
+}
+    button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+    button:hover{
+    background: #d88771;
+    color: white;
+}
+}
+
+//Blog List
+.blog-container{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .blog-list{
+        min-width: 30%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0px 20px;
+        box-sizing: border-box;
+
+        // align-items: center;
+        // justify-content: center;
+    }
+    .blog{
+        margin: 0.5rem;
+        background: white;
+        color: black;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            flex: 1;
+        }
+    }
+    .delete-btn{
+        background: red;
+        color: white;
+        border: none;
+        padding:1rem;
+        cursor: pointer;
+    }
+    .delete-btn:hover{
+        background: white;
+        color: red;
+    }
+    .blog-item{
+        padding:0rem 0.5rem;
+    }
+    .fa-trash{
+        pointer-events: none;
+    }
+}
+
+//Media Queries
+@media (min-width:920px) and (max-width:1318px){
+    .header-form{
+        width:900px;
+        margin:auto;
+    }
+}
+@media (min-width:760px) and (max-width: 920px){
+    .header-form{
+        width:750px;
+        margin:auto;
+    }
+}
+@media (max-width:760px){
+    .modal {
+        .modal-box, .modal-box2{
+        width: 320px;
+    }
+    }
+    header{
+        padding: 0;
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    .header-form{
+        width:300px;
+        margin:auto;
+    }
+}
